@@ -6,7 +6,12 @@ NAME		= puzmon
 SRC_DIR		= ./srcs
 INCLUDE_DIR	= ./includes
 
-SRCS		= $(SRC_DIR)/puzmon.c
+SRCS		= $(SRC_DIR)/element.c \
+			  $(SRC_DIR)/io.c \
+			  $(SRC_DIR)/party.c \
+			  $(SRC_DIR)/battle.c \
+			  $(SRC_DIR)/dungeon.c \
+			  $(SRC_DIR)/puzmon.c
 OBJS		= $(SRCS:.c=.o)
 
 all		: $(NAME)
