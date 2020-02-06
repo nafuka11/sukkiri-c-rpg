@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <math.h>
-#include "io.h"
+#include "display.h"
 #include "battle.h"
 
 /**

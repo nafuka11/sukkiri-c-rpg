@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "dungeon.h"
 #include "battle.h"
-#include "io.h"
+#include "display.h"
 
 static Monster dungeonMonsters[5] = {
   {.name = "スライム", .hp = 100, .maxHp = 100, .elem = WATER, .attack = 10, .defence = 5},

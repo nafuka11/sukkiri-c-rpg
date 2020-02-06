@@ -5,7 +5,7 @@
 #include "monster.h"
 #include "dungeon.h"
 #include "party.h"
-#include "io.h"
+#include "display.h"
 
 int main(int argc, char** argv)
 {

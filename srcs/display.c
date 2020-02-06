@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "io.h"
+#include "display.h"
 
 /**
  * @brief パーティ情報の表示

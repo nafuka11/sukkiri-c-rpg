@@ -1,5 +1,5 @@
-#ifndef __IO_H__
-#define __IO_H__
+#ifndef __DISPLAY_H__
+#define __DISPLAY_H__
 
 #include "party.h"
 #include "monster.h"

@@ -7,7 +7,7 @@ SRC_DIR		= ./srcs
 INCLUDE_DIR	= ./includes
 
 SRCS		= $(SRC_DIR)/element.c \
-			  $(SRC_DIR)/io.c \
+			  $(SRC_DIR)/display.c \
 			  $(SRC_DIR)/party.c \
 			  $(SRC_DIR)/battle.c \
 			  $(SRC_DIR)/dungeon.c \
