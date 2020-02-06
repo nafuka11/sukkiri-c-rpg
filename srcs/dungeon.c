@@ -3,6 +3,14 @@
 #include "battle.h"
 #include "io.h"
 
+static Monster dungeonMonsters[5] = {
+  {.name = "スライム", .hp = 100, .maxHp = 100, .elem = WATER, .attack = 10, .defence = 5},
+  {.name = "ゴブリン", .hp = 200, .maxHp = 200, .elem = EARTH, .attack = 20, .defence = 15},
+  {.name = "オオコウモリ", .hp = 300, .maxHp = 300, .elem = WIND, .attack = 30, .defence = 25},
+  {.name = "ウェアウルフ", .hp = 400, .maxHp = 400, .elem = WIND, .attack = 40, .defence = 30},
+  {.name = "ドラゴン", .hp = 800, .maxHp = 800, .elem = FIRE, .attack = 50, .defence = 40}
+};
+
 /**
  * @brief ダンジョン開始から終了
  * @param pParty
@@ -27,4 +35,17 @@ int goDungeon(Party* pParty, Dungeon* pDungeon)
     }
   }
   return winCount;
+}
+
+/**
+ * @brief ダンジョン情報を初期化する
+ * @return Dungeon ダンジョン情報
+ */
+Dungeon initDungeon(void)
+{
+  Dungeon dungeon = {
+    .monsters = dungeonMonsters,
+    .monsterSize = 5
+  };
+  return dungeon;
 }

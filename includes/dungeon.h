@@ -11,5 +11,6 @@ typedef struct DUNGEON
 } Dungeon;
 
 int goDungeon(Party* pParty, Dungeon* pDungeon);
+Dungeon initDungeon(void);
 
 #endif

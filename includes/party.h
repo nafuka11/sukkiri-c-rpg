@@ -13,6 +13,7 @@ typedef struct PARTY
   int defence;
 } Party;
 
+Party initParty(char *playerName);
 Party organizeParty(char* name, Monster monster[], int monsterSize);
 
 #endif
