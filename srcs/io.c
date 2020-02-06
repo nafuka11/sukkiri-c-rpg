@@ -96,3 +96,23 @@ void printCombo(int combo)
 {
   printf("\x1b[44m\x1b[37m%d COMBO!\x1b[0m", combo);
 }
+
+/**
+ * @brief ダンジョン探索結果を表示する
+ * @param winCount 戦闘勝利回数
+ * @param party
+ * @param dungeon
+ */
+void printDungeonResult(int winCount, Party *party, Dungeon *dungeon)
+{
+  // 冒険終了後
+  if (winCount == dungeon->monsterSize) {
+    printf("%sはダンジョンを制覇した！\n", party->name);
+    printf("*** GAME CLEARD! ***\n");
+  } else
+  {
+    printf("*** GAME OVER***\n");
+  }
+
+  printf("倒したモンスター数=%d\n", winCount);
+}

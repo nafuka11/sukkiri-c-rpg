@@ -22,17 +22,7 @@ int main(int argc, char** argv)
 
   // ダンジョンへ
   int winCount = goDungeon(&party, &dungeon);
-
-  // 冒険終了後
-  if (winCount == dungeon.monsterSize) {
-    printf("%sはダンジョンを制覇した！\n", party.name);
-    printf("*** GAME CLEARD! ***\n");
-  } else
-  {
-    printf("*** GAME OVER***\n");
-  }
-
-  printf("倒したモンスター数=%d\n", winCount);
+  printDungeonResult(winCount, &party, &dungeon);
 
   return 0;
 }
